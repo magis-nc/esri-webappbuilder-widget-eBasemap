@@ -1,0 +1,41 @@
+<div>
+    <div class="header" data-dojo-attach-point="selectedBasemapDiv">
+        <div class="header-row" data-dojo-attach-point="row2basemapsNode" style="display:none;">
+            <div class="esriBasemapGallerySelectedNode left" data-dojo-attach-point="bm1Node">
+                <img src="${folderUrl}/images/default.jpg" data-dojo-attach-point="bm1ImgNode" class="esriBasemapGalleryThumbnail">
+                <img class="galleryBasemapRemove" src="${folderUrl}/images/close.png" title="${nls.removeButton}" data-dojo-attach-event="onClick:onRemoveFirst">
+                <div class="esriBasemapGalleryLabelContainer" data-dojo-attach-point="bm1LabelNode" style="max-width:100px;"><span>Fond 1 </span></div>
+            </div>
+            <div class="switcher" data-dojo-attach-point="switchNode">
+                <img src="${folderUrl}/images/switch.png" data-dojo-attach-point="switchImgNode" data-dojo-attach-event="onClick:onSwitchBasemaps">
+            </div>
+           <div class="esriBasemapGallerySelectedNode right" data-dojo-attach-point="bm2Node">
+                <img src="${folderUrl}/images/default.jpg" data-dojo-attach-point="bm2ImgNode" class="esriBasemapGalleryThumbnail">
+                <img class="galleryBasemapRemove" src="${folderUrl}/images/close.png" title="${nls.removeButton}"  data-dojo-attach-event="onClick:onRemoveSecond">
+                <div class="esriBasemapGalleryLabelContainer" data-dojo-attach-point="bm2LabelNode" style="max-width:100px;"><span>Fond 2</span></div>
+            </div>
+        </div>
+        <div class="header-row" data-dojo-attach-point="row1basemapNode">
+            <div class="esriBasemapGallerySelectedNode" data-dojo-attach-point="bmNode">
+                <img src="${folderUrl}/images/default.jpg" data-dojo-attach-point="bmImgNode" class="esriBasemapGalleryThumbnail">
+                <div class="esriBasemapGalleryLabelContainer" data-dojo-attach-point="bmLabelNode"><span>Basemap</span></div>
+            </div>           
+        </div>
+    </div>
+    <div class="slider" data-dojo-attach-point="sliderDiv">
+        <div class="slider-widget" 
+            data-dojo-attach-point="slider" 
+            data-dojo-type="dijit/form/HorizontalSlider"  
+            data-dojo-attach-event="onChange:onSliderChange,onMouseMove:onSliderChange" 
+            showbuttons="false" value="50" 
+            minimum="0" 
+            maximum="100" 
+            intermediatechanges="false">
+        </div>
+		<div class="slider-info" data-dojo-attach-point="sliderInfo">${nls.opacity} 100%</div>
+    </div>
+    
+
+    <hr />
+    <div data-dojo-attach-point="availableBmsNode"></div>
+</div>
