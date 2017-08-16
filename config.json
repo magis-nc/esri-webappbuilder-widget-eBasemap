@@ -1,5 +1,8 @@
 {
-  "basemapGallery": {
-    "basemaps": []
-  }
+    "mergeTransparency": false,
+    "basemapGallery": {
+        "showArcGISBasemaps": true,
+        "bingMapsKey": false,
+        "basemaps": []
+    }
 }
